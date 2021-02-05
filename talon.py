@@ -162,7 +162,6 @@ if(__name__ == '__main__'):
     y = model(video[None,...]) #.cuda())
     print("OUTPUT: ")
     print(y)
-    return y
     
     
     
