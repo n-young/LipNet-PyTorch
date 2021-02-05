@@ -160,11 +160,9 @@ if(__name__ == '__main__'):
     video, img_p = load_video(sys.argv[1])
     # NOTE: CHANGED
     y = model(video[None,...]) #.cuda())
-    txt = ctc_decode(y[0])
-    
-    output_video(img_p, txt, sys.argv[2])
-    
-    shutil.rmtree(img_p)
+    print("OUTPUT: ")
+    print(y)
+    return y
     
     
     
